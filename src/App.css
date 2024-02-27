@@ -2,6 +2,20 @@ html {
     font-size: 16px;
 }
 
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+    html {
+        font-size: 14px;
+    }
+    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +34,14 @@ html {
     background-image: url("./images/man_dog_photo.jpg");
     height: 800px;
     background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .landingTopContainer {
+        height: 500px;
+    }
+    
 }
 
 .landingHeaderContainer {
@@ -31,6 +53,15 @@ html {
 .landingLinksContainer {
     display: flex;
     gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .landingLinksContainer {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
 }
 
 .landingLink {
@@ -57,11 +88,31 @@ html {
     padding-top: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .landingTitle {
+        font-size: 1.5rem;
+    }
+    .landingBlurb {
+        display:none;
+    }
+    
+}
+
 .landingBtnContainer {
     display: flex;
     justify-content: flex-start;
     gap: 3rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .landingBtnContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        gap: 2rem;
+    }
+    
 }
 
 
@@ -84,6 +135,12 @@ html {
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px){
+    .learnMoreBtn {
+        color: white;
+    }
+}
+
 .learnMoreBtn img {
     height: 1.5rem;
     margin-left: .5rem;
@@ -97,6 +154,15 @@ html {
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .landingMiddleContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
 }
 
 .infoContainer {

@@ -14,7 +14,7 @@ export default function Home() {
                     <h2 className="landingHeader">
                         SAN CARLOS OUTFITTERS
                     </h2>
-                    <span className="landingLinksContainer">
+                    <nav className="landingLinksContainer">
                         <h2 className="landingLink">
                             HOME
                         </h2>
@@ -27,7 +27,7 @@ export default function Home() {
                         <h2 className="landingLink">
                             CONTACT
                         </h2>
-                    </span>
+                    </nav>
                 </span>
                 <span className="landingInformation">
                     <div className="landingInformationContainer">
@@ -35,7 +35,7 @@ export default function Home() {
                         <h1 className="landingTitle">
                             Authentic Hunting Expeditions on Native Grounds
                         </h1>
-                        <p>
+                        <p className="landingBlurb">
                             Our guided expeditions on sovereign Native lands offer a unique opportunity to connect with the wilderness as never before. Led by expert guides from local communities, you'll experience hunting in its most authentic form, respecting the land and its traditions. Join us for an unforgettable adventure where heritage and the great outdoors come together for a truly remarkable experience.
                         </p>
                         <span className="landingBtnContainer">
