@@ -1,8 +1,20 @@
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Josefin Sans, sans-serif;
 }
+
+:root {
+    --primary-color: #354131;
+    --button-color: #E38800;
+}
+
+ /* Landing Page CSS */
 
 .landingTopContainer {
     background-image: url("./images/man_dog_photo.jpg");
@@ -11,27 +23,131 @@
 }
 
 .landingHeaderContainer {
-    padding-top: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.landingLinksContainer {
+    display: flex;
     gap: 3rem;
 }
 
-.landingHeader {
+.landingLink {
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.landingLink:hover {
+    color: var(--button-color);
 }
 
 .landingInformation {
-    border: red solid 1px;
     display: flex;
     justify-content: flex-end;
+    padding-right: 2rem;
 }
 
 .landingInformationContainer {
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     padding-top: 2rem;
+}
+
+.landingBtnContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    font-weight: 600;
+}
+
+
+.scheduleNowBtn {
+    background-color: var(--button-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.learnMoreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.learnMoreBtn img {
+    height: 1.5rem;
+    margin-left: .5rem;
+}
+
+
+.landingMiddleContainer {
+    padding: 3rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.infoContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    width: 20rem;
+}
+
+.infoContainer img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.infoContainer h3 {
+    font-size: 1.5rem;
+}
+
+.infoContainer p {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.landingBottomCTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 7rem 5rem;
+}
+
+/* Footer CSS */
+
+.footerContainer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    color: white;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
 }
