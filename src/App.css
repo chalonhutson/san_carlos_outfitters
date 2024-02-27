@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landingTopContainer {
+    background-image: url("./images/man_dog_photo.jpg");
+    height: 800px;
+    background-size: cover;
+}
+
+.landingHeaderContainer {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.landingHeader {
+    font-size: 1rem;
+}
+
+.landingInformation {
+    border: red solid 1px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landingInformationContainer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
