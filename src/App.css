@@ -156,11 +156,11 @@ html {
     gap: 3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .landingMiddleContainer {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     
 }
@@ -175,8 +175,16 @@ html {
     width: 20rem;
 }
 
+@media screen and (max-width: 1000px) {
+    .infoContainer {
+        padding: 1rem 0;
+    }
+    
+}
+
 .infoContainer img {
     height: 15rem;
+    width: 20rem;
     object-fit: cover;
 }
 
@@ -216,4 +224,9 @@ html {
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
+}
+
+.footerInfo p {
+    font-size: 1rem;
+    font-weight: 300;
 }

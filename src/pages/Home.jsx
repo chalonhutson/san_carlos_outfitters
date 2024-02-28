@@ -14,7 +14,10 @@ export default function Home() {
                     <h2 className="landingHeader">
                         SAN CARLOS OUTFITTERS
                     </h2>
-                    <nav className="landingLinksContainer">
+                    <h2>
+                        (480) 204-3131
+                    </h2>
+                    {/* <nav className="landingLinksContainer">
                         <h2 className="landingLink">
                             HOME
                         </h2>
@@ -27,7 +30,7 @@ export default function Home() {
                         <h2 className="landingLink">
                             CONTACT
                         </h2>
-                    </nav>
+                    </nav> */}
                 </span>
                 <span className="landingInformation">
                     <div className="landingInformationContainer">
